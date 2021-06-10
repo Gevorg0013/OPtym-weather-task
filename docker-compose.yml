@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  weather:
+    image: weather
+    build: ./
+    container_name: weather
+    ports:
+      - 8088:8088
+  
+networks:
+  mnet:
+    driver: bridge
